@@ -30,10 +30,16 @@ function acceptIntoMovie(age, isSupervised) {
 	} 
 	return "Movei admittance denied";
 }
-console.log(acceptIntoMovie(10,false)) // Movei admittance denied
+console.log(acceptIntoMovie(10,false)) // Movie admittance denied
 
 /*-------------------------------------------------*/ (OK-3)
 function acceptIntoMovie(age, isSupervised){
-	age >= 15 || isSupervised === true ? "Movie allowed" : "movie denied"
+	return age >= 15 || isSupervised ? "Movie allowed" : "Movie denied";
 }
-console.logt(acceptIntoMovie(9, false));
+console.log(acceptIntoMovie(9, false)); // Movie denied
+
+/*-------------------------------------------------*/ (OK-4)
+function acceptIntoMovie(age, isSupervised){
+	return age >= 15 || isSupervised;
+}
+console.log(acceptIntoMovie(9, false)); // false
