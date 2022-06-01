@@ -108,12 +108,13 @@ console.log(addIndex(arrayOne)); // [1, 2, 3, 4, 5]
 
 /*-------------------------------------------------*/ (by Elif / OK) (2022.05.12) (MAP)
 const arrayOne = [1, 2, 3, 4, 5]
+const arrayTwo = [5, 4, 3, 2, 1]
 function addIndex(array){
     return array.map((item,index)=>item+index) 
     // there are 2 argmts now, the 2nd argmt will give the INDEX
 }
 console.log(addIndex(arrayOne)); // [1, 3, 5, 7, 9]
-
+console.log(addIndex(arrayTwo)); // [5, 5, 5, 5, 5]
 
 
 /*------------------------(INTERNET)------------------------*/
