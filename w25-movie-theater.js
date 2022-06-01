@@ -33,3 +33,7 @@ function acceptIntoMovie(age, isSupervised) {
 console.log(acceptIntoMovie(10,false)) // Movei admittance denied
 
 /*-------------------------------------------------*/ (OK-3)
+function acceptIntoMovie(age, isSupervised){
+	age >= 15 || isSupervised === true ? "Movie allowed" : "movie denied"
+}
+console.logt(acceptIntoMovie(9, false));
